@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#222"><script>
+// phone-size wrapper for screenshots: tools/frame.html?w=390&h=844&q=<urlencoded query for index.html>
+const p=new URLSearchParams(location.search),f=document.createElement('iframe');
+f.style.cssText=`border:0;width:${p.get('w')}px;height:${p.get('h')}px;display:block`;f.src='../index.html?'+p.get('q');document.body.appendChild(f);
+</script>
